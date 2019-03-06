@@ -1,0 +1,30 @@
+body {
+    padding: 15px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game-board--field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    margin-bottom: 2%;
+    background: gray;
+    cursor: pointer;
+}
+
+.game-board--field:hover {
+    background: darkgray;
+}
+
+.game-board--field:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
